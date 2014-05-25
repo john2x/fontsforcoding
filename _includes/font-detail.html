@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>{{ font.full_name }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-8">
+    <img src="/images/fonts/screenshots/{{ font.name }}.png">
+  </div>
+  <div class="col-xs-4">
+    <p>
+      {% raw %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.
+      {% endraw %}
+    </p>
+    <h4>Stats</h4>
+    <ul>
+      <li><strong>Readable size: </strong>{{ font.stats.readable_size }}
+      <li><strong>Lines per screen: </strong>{{ font.stats.lps }}
+      <li><strong>Ambiguous characters: </strong>
+        {% if font.stats.ambiguous_chars %}<code>{{ font.stats.ambiguous_chars }}</code>
+        {% else %}None{% endif %}
+      <li><strong>Unicode support: </strong>
+        {% if font.stats.unicode_support == "full" %}
+        <span class="label label-success">Full</span>
+        {% elsif font.stats.unicode_support == "limited" %}
+        <span class="label label-warning">Limited</span>
+        {% else %}
+        <span class="label label-danger">None</span>
+        {% endif %}
+    </ul>
+
+    <h4>Info</h4>
+    <dl>
+      <dt><strong>Publisher: </strong></dt><dd>{{ font.publisher }}</dd>
+
+      <dt><strong>Designer: </strong></dt><dd>{{ font.designer }}</dd>
+      <dt><strong>Variants: </strong></dt><dd>
+        {% for v in font.variants %}
+            {{ v }}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      </dd>
+      {% if font.license %}
+        <dt><strong>Open Source License: </strong></dt><dd>{{ font.license }}</dd>
+      {% endif %}
+      </dl>
+    <h4>Links</h4>
+    <a href="{{ font.download_url }}" class="btn btn-success">Download</a>
+    {% if font.repository %}
+    <a href="{{ font.repository }}" class="btn btn-info">Source</a>
+    {% endif %}
+    <hr/>
+
+  </div>
+</div>

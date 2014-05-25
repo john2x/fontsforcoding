@@ -1,0 +1,26 @@
+<li class="media font-item">
+  <a class="pull-left" href="/font/{{ font.name }}/">
+    <img class="media-object" src="/images/fonts/thumbnails/{{ font.name }}.png">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading"><a href="/font/{{ font.name }}/">{{ font.full_name }}</a></h4>
+    <p>{{ font.description }}</p>
+    <ul>
+      <li><strong>Readable size: </strong>{{ font.stats.readable_size }}
+      <li><strong>Lines per screen: </strong>{{ font.stats.lps }}
+      <li><strong>Ambiguous characters: </strong>
+        {% if font.stats.ambiguous_chars %}<code>{{ font.stats.ambiguous_chars }}</code>
+        {% else %}None{% endif %}
+      <li><strong>Unicode support: </strong>
+        {% if font.stats.unicode_support == "full" %}
+        <span class="label label-success">Full</span>
+        {% elsif font.stats.unicode_support == "limited" %}
+        <span class="label label-warning">Limited</span>
+        {% else %}
+        <span class="label label-danger">None</span>
+        {% endif %}
+    </ul>
+
+    <a href="/font/{{ font.name }}/" class="btn pull-right btn-info btn-small">Read more about {{ font.full_name }}</a>
+  </div>
+</li>

@@ -1,0 +1,33 @@
+- name: menlo
+  full_name: Menlo
+  download_url: "http://apple.com"
+  description: "Foo bar"
+  publisher: Apple
+  designer: N/A
+  repository: https://github.com/adobe/source-code-pro
+  license: Foo
+  stats:
+      readable_size: 12
+      lps: 25
+      ambiguous_chars: "0 O"
+      unicode_support: limited
+  variants:
+    - bold
+    - italic
+
+- name: source-code-pro
+  full_name: Source Code Pro
+  download_url: "http://apple.com"
+  description: ""
+  publisher: Apple
+  designer: N/A
+  repository: https://github.com/adobe/source-code-pro
+  license: Foo
+  stats:
+      readable_size: 12
+      lps: 25
+      ambiguous_chars:
+      unicode_support: full
+  variants:
+    - bold
+    - italic

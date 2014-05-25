@@ -1,0 +1,26 @@
+header {
+    text-align: center;
+}
+
+header .logo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+header ul {
+    display: inline;
+    list-style: none;
+}
+
+header ul li {
+    margin-top: -40px;
+}
+
+footer {
+    margin-top: 4em;
+}
+
+footer ul {
+    list-style: none inside;
+    padding-left: 0;
+}
