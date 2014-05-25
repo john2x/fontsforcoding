@@ -24,3 +24,13 @@ footer ul {
     list-style: none inside;
     padding-left: 0;
 }
+
+ul.font-list .media-body ul {
+    list-style: none inside;
+    padding-left: 0;
+}
+
+img.media-object {
+    border: #34495e solid 1px;
+    border-radius: 3px;
+}

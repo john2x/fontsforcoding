@@ -6,16 +6,18 @@
     <h4 class="media-heading"><a href="/font/{{ font.name }}/">{{ font.full_name }}</a></h4>
     <p>{{ font.description }}</p>
     <ul>
-      <li><strong>Readable size: </strong>{{ font.stats.readable_size }}
+      <li><strong>Recommended size: </strong>{{ font.stats.recommended_size }}
       <li><strong>Lines per screen: </strong>{{ font.stats.lps }}
       <li><strong>Ambiguous characters: </strong>
         {% if font.stats.ambiguous_chars %}<code>{{ font.stats.ambiguous_chars }}</code>
-        {% else %}None{% endif %}
+        {% else %}<span class="label label-success">None</span>{% endif %}
       <li><strong>Unicode support: </strong>
         {% if font.stats.unicode_support == "full" %}
         <span class="label label-success">Full</span>
         {% elsif font.stats.unicode_support == "limited" %}
-        <span class="label label-warning">Limited</span>
+        <span class="label label-info">Limited</span>
+        {% elsif font.stats.unicode_support == "very limited" %}
+        <span class="label label-warning">Very Limited</span>
         {% else %}
         <span class="label label-danger">None</span>
         {% endif %}
@@ -23,4 +25,5 @@
 
     <a href="/font/{{ font.name }}/" class="btn pull-right btn-info btn-small">Read more about {{ font.full_name }}</a>
   </div>
+  <hr/>
 </li>

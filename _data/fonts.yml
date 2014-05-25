@@ -1,33 +1,33 @@
 - name: menlo
   full_name: Menlo
-  download_url: "http://apple.com"
-  description: "Foo bar"
+  download_url:
+  description: "First shipped with Mac OS X Snow Leopard, Menlo is based upon the Open Source font Bitstream Vera and the public domain font Deja Vu."
   publisher: Apple
-  designer: N/A
-  repository: https://github.com/adobe/source-code-pro
-  license: Foo
+  designer: Jim Lyles
+  repository:
+  license:
   stats:
-      readable_size: 12
-      lps: 25
-      ambiguous_chars: "0 O"
-      unicode_support: limited
-  variants:
-    - bold
-    - italic
-
-- name: source-code-pro
-  full_name: Source Code Pro
-  download_url: "http://apple.com"
-  description: ""
-  publisher: Apple
-  designer: N/A
-  repository: https://github.com/adobe/source-code-pro
-  license: Foo
-  stats:
-      readable_size: 12
-      lps: 25
+      recommended_size: 12pt
+      lps: 50
       ambiguous_chars:
       unicode_support: full
   variants:
     - bold
     - italic
+    - bold italic
+
+- name: source-code-pro
+  full_name: Source Code Pro
+  download_url: "http://sourceforge.net/projects/sourcecodepro.adobe/files/"
+  description: "Source Code Pro is a monospaced sans serif typeface from Adobe, distributed under the SIL Open Font License."
+  publisher: Adobe
+  designer: Paul D. Hunt
+  repository: https://github.com/adobe/source-code-pro
+  license: SIL Open Font License
+  stats:
+      recommended_size: 12pt
+      lps: 43
+      ambiguous_chars:
+      unicode_support: full
+  variants:
+    - bold
