@@ -14,10 +14,10 @@
       <li><strong>Unicode support: </strong>
         {% if font.stats.unicode_support == "full" %}
         <span class="label label-success">Full</span>
+        {% elsif font.stats.unicode_support == "good" %}
+        <span class="label label-info">Good</span>
         {% elsif font.stats.unicode_support == "limited" %}
-        <span class="label label-info">Limited</span>
-        {% elsif font.stats.unicode_support == "very limited" %}
-        <span class="label label-warning">Very Limited</span>
+        <span class="label label-warning">Limited</span>
         {% else %}
         <span class="label label-danger">None</span>
         {% endif %}

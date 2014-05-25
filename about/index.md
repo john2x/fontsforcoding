@@ -36,8 +36,8 @@ How much the font supports Unicode characters. There are 4 possible values:
 
 <ul>
 <li><span class="label label-success">Full</span> - All Unicode characters are available.</li>
-<li><span class="label label-info">Limited</span> - Only a limited subset of Unicode characters are available. But although limited, it's still good enough for "average" use.</li>
-<li><span class="label label-warning">Very Limited</span> - Very limited subset of Unicode characters are available. Only the most common/popular characters are supported.</li>
+<li><span class="label label-info">Good</span> - Not all Unicode character are supported, but still good enough for "average" use.</li>
+<li><span class="label label-warning">Limited</span> - Limited subset of Unicode characters are available. Only the most common/popular characters are supported.</li>
 <li><span class="label label-danger">None</span> - No Unicode characters at all.</li>
 </ul>
 

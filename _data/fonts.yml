@@ -10,7 +10,7 @@
       recommended_size: 12pt
       lps: 50
       ambiguous_chars:
-      unicode_support: full
+      unicode_support: good
   variants:
     - bold
     - italic
@@ -28,6 +28,6 @@
       recommended_size: 12pt
       lps: 43
       ambiguous_chars:
-      unicode_support: full
+      unicode_support: good
   variants:
     - bold
