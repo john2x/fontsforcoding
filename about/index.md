@@ -17,7 +17,7 @@ All screenshots are taken on my machine, with the following setup:
 
 #### Recommended size
 
-This is the recommended minimum size a font can be used. Of course, if you prefer smaller fonts, that's up to you. But for the purposes of this website, this is the smallest size a font can get while still being comfortable readable, for me.
+This is the recommended minimum size a font can be used. Of course, if you prefer smaller fonts, that's up to you. But for the purposes of this website, this is the smallest size a font can get for me while still being comfortable readable.
 
 #### Lines per screen
 
