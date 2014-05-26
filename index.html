@@ -7,6 +7,9 @@ overview: true
   <ul class="media-list font-list">
     {% for font in site.data.fonts %}
       {% include font-item.html %}
+      {% unless forloop.last %}
+       <hr/>
+      {% endunless %}
     {% endfor %}
   </ul>
 </div>
