@@ -32,9 +32,18 @@
 
     <h4>Info</h4>
     <dl>
-      <dt><strong>Publisher: </strong></dt><dd>{{ font.publisher }}</dd>
+      {% if font.publisher %}
+      <dt><strong>Publisher: </strong></dt><dd>
+        {% if font.publisher_url %}<a href="{{ font.publisher_url }}">{{ font.publisher }}</a>
+        {% else %}{{ font.publisher }}{% endif %}</dd>
+      {% endif %}
 
-      <dt><strong>Designer: </strong></dt><dd>{{ font.designer }}</dd>
+      {% if font.designer %}
+      <dt><strong>Designer: </strong></dt><dd>
+        {% if font.designer_url %}<a href="{{ font.designer_url }}">{{ font.designer }}</a>
+        {% else %}{{ font.designer }}{% endif %}</dd>
+      {% endif %}
+
       <dt><strong>Variants: </strong></dt><dd>
         {% if font.variants %}
         {% for v in font.variants %}
@@ -56,6 +65,11 @@
     {% endif %}
     {% if font.repository %}
     <a href="{{ font.repository }}" class="btn btn-info">Source</a>
+    {% endif %}
+
+    {% if page.note %}
+    <h4>Notes</h4>
+    {{ page.note }}
     {% endif %}
     <hr/>
 

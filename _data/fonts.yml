@@ -1,9 +1,29 @@
+- name: fantasque-sans
+  full_name: Fantasque Sans Mono
+  download_url: "http://openfontlibrary.org/en/font/fantasque-sans-mono"
+  description: "A programming font, designed with functionality in mind, and with some wibbly-wobbly handwriting-like fuzziness that makes it unassumingly cool."
+  publisher:
+  publisher_url:
+  designer: Jany Belluz
+  designer_url: https://github.com/belluzj
+  repository: https://github.com/belluzj/fantasque-sans
+  license: SIL Open Font License
+  stats:
+      recommended_size: 13pt
+      lps: 50
+      ambiguous_chars:
+      unicode_support: good
+  variants:
+    - bold, italic, bold italic
+
 - name: menlo
   full_name: Menlo
   download_url:
   description: "First shipped with Mac OS X Snow Leopard, Menlo is based upon the Open Source font Bitstream Vera and the public domain font Deja Vu."
   publisher: Apple
+  publisher_url: http://apple.com
   designer: Jim Lyles
+  designer_url:
   repository:
   license:
   stats:
@@ -21,7 +41,9 @@
   download_url: "http://sourceforge.net/projects/sourcecodepro.adobe/files/"
   description: "Source Code Pro is a monospaced sans serif typeface from Adobe, distributed under the SIL Open Font License."
   publisher: Adobe
+  publisher_url: http://adobe.com
   designer: Paul D. Hunt
+  designer_url:
   repository: https://github.com/adobe/source-code-pro
   license: SIL Open Font License
   stats:
