@@ -1,3 +1,21 @@
+- name: consolas
+  full_name: Consolas
+  download_url:
+  description: "Consolas is a part of a suite of fonts that take advantage of Microsoft's ClearType font rendering technology."
+  publisher: Microsoft
+  publisher_url: http://microsoft.com
+  designer: Luc(as) de Groot
+  designer_url:
+  repository:
+  license:
+  stats:
+      recommended_size: 13pt
+      lps: 50
+      ambiguous_chars:
+      unicode_support: good
+  variants:
+    - bold, italic, bold italic
+
 - name: fantasque-sans
   full_name: Fantasque Sans Mono
   download_url: "http://openfontlibrary.org/en/font/fantasque-sans-mono"
@@ -47,6 +65,26 @@
   stats:
       recommended_size: 12pt
       lps: 50
+      ambiguous_chars:
+      unicode_support: good
+  variants:
+    - bold
+    - italic
+    - bold italic
+
+- name: meslo
+  full_name: Meslo LG
+  download_url: https://github.com/andreberg/Meslo-Font/tree/master/dist
+  description: "Meslo LG is a customized version of Apple’s Menlo-Regular font"
+  publisher:
+  publisher_url:
+  designer: André Berg
+  designer_url: http://about.me/andreberg
+  repository: https://github.com/andreberg/Meslo-Font/
+  license: Apache 2.0
+  stats:
+      recommended_size: 12pt
+      lps: 41
       ambiguous_chars:
       unicode_support: good
   variants:
