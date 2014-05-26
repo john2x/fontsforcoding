@@ -16,6 +16,24 @@
   variants:
     - bold, italic, bold italic
 
+- name: fira-mono
+  full_name: Fira Mono
+  download_url: "http://dev.carrois.com/fira-3-1/#download"
+  description: "Designed to integrate with the character of the OS, the Fira Sans typeface also aims to cover the legibility needs for a large range of handsets varying in screen quality and rendering."
+  publisher: Mozilla
+  publisher_url:  http://mozilla.com
+  designer: Erik Spiekermann, Ralph du Carrois, Anja Meiners and Botio Nikoltchev
+  designer_url: http://dev.carrois.com
+  repository: https://github.com/mozilla/Fira
+  license: SIL Open Font License
+  stats:
+      recommended_size: 12pt
+      lps: 36
+      ambiguous_chars:
+      unicode_support: good
+  variants:
+    - bold
+
 - name: menlo
   full_name: Menlo
   download_url:
