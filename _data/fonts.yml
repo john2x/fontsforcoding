@@ -52,6 +52,23 @@
   variants:
     - bold
 
+- name: inconsolata
+  full_name: Inconsolata
+  download_url: "http://www.levien.com/type/myfonts/inconsolata.html"
+  description: "Inconsolata is a humanist monospaced font designed for source code listing, terminal emulators, and similar uses."
+  publisher:
+  publisher_url:
+  designer: Raph Levien
+  designer_url: http://www.levien.com
+  repository:
+  license: SIL Open Font License
+  stats:
+      recommended_size: 13pt
+      lps: 52
+      ambiguous_chars:
+      unicode_support: good
+  variants:
+
 - name: menlo
   full_name: Menlo
   download_url:
@@ -91,6 +108,23 @@
     - bold
     - italic
     - bold italic
+
+- name: monaco
+  full_name: Monaco
+  download_url:
+  description: "Monaco ships with OS X and was already present with all previous versions of the Mac operating system."
+  publisher: Apple
+  publisher_url: http://apple.com
+  designer: Susan Kare and Kris Holmes
+  designer_url:
+  repository:
+  license:
+  stats:
+      recommended_size: 12pt
+      lps: 47
+      ambiguous_chars:
+      unicode_support: good
+  variants:
 
 - name: source-code-pro
   full_name: Source Code Pro
